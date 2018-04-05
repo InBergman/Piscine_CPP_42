@@ -1,0 +1,48 @@
+#include "Peon.hpp"
+
+Peon::Peon() {
+  std::string str = "coco";
+  setName(str);
+  std::cout << "Zog zog" << std::endl;
+  
+};
+
+Peon::Peon(std::string name) {
+  setName(name);
+  std::cout << "Zog zog" << std::endl;
+  
+};
+
+Peon::Peon(Peon & po) {
+  (*this) = po;
+};
+
+std::string Peon::getName(void) const {
+  return (this->_name);
+};
+
+void        Peon::setName(std::string & name) {
+  this->_name = name;
+};
+
+
+Peon::~Peon(void) {
+  std::cout << "Bleuark..." << std::endl;
+};
+
+void Peon::getPolymorphed(void) const {
+  std::cout << getName()
+	    << " has been turned into a pink pony !"
+	    << std::endl;
+};
+/*
+std::string Peon::introduce(void) const {
+  return("(Peon) I am " + getName() + " and I like otters !(Peon)\n");
+};
+*/
+
+std::ostream & operator<<(std::ostream & stream, Peon const & peon) {
+  stream << peon.introduce();
+  return(stream);
+};
+

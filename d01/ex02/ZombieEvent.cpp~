@@ -1,0 +1,26 @@
+#include "ZombieEvent.hpp"
+
+
+ZombieEvent::ZombieEvent() : eventType("NULL") {
+
+};
+
+void ZombieEvent::setZombieType(Zombie zombie){
+  this->eventType = zombie.type;
+};
+
+Zombie* ZombieEvent::newZombie(std::string name){
+  Zombie *zomb = new Zombie(name);
+  zomb.type = this.eventType;
+  return (zomb);
+};
+
+Zombie* ZombieEvent::randomChump(){
+  Zombie *zomb = new Zombie(name);
+  zomb.type = this.eventType;
+  return (zomb);
+};
+  
+ZombieEvent::~ZombieEvent(){
+
+};

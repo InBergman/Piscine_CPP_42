@@ -1,0 +1,21 @@
+#include "Zombie.hpp"
+
+
+Zombie::Zombie(){
+
+};
+
+Zombie::~Zombie(){
+
+};
+
+void Zombie::announce(){
+  this->type = typeid(this).name();
+  this->name = "Dude";
+  std::cout << "< "
+	    << this->type
+	    << " "
+	    << this->name
+	    << " >"
+	    << std::endl;
+};

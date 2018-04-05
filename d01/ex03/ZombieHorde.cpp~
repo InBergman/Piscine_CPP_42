@@ -1,0 +1,10 @@
+#include "ZombieHorde.hpp"
+#include "Zombie.hpp"
+
+ZombieHorde::ZombieHorde(int n) {
+  Zombie zomb = new Zombie[n];
+};
+
+ZombieHorde::~ZombieHorde(){
+
+};

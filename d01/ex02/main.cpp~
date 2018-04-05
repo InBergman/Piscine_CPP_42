@@ -1,0 +1,13 @@
+#include "Zombie.hpp"
+#include "ZombieEvent.hpp"
+
+int main(void) {
+
+  Zombie zomb[3];
+
+  zomb[0].announce();
+  zomb[1].announce();
+  zomb[2].announce();
+
+  return(0);
+}

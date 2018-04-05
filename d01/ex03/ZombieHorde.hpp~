@@ -1,0 +1,18 @@
+#ifndef ZOMBIEHORDE_HPP
+#define ZOMBIEHORDE_HPP
+
+#include <iostream>
+#include <string>
+#include <string>
+
+class ZombieHorde {
+
+private:
+  ZombieHorde(int n);
+  ~ZombieHorde();
+  
+public:
+
+};
+
+#endif
