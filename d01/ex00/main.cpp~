@@ -1,8 +1,0 @@
-#include "Pony.hpp"
-
-int main(void) {
-  Pony test;
-  
-  std::cout << test.getNumOfPony() << std::endl;
-  return(0);
-}
